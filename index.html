@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Афиша концертов и обзорных экскурсий. Новости, календарь мероприятий и информация о заказе билетов."
+    />
+    <meta name="theme-color" content="#191919" />
+    <title>Афиша — концертно-экскурсионные программы</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#main">Сайт концертно - экскурсионных программ</a>
+
+        <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
+          <a href="#afisha">Афиша</a>
+          <a href="#afisha">Заказ билетов</a>
+          <a href="#contacts">Контакты</a>
+          <span>История дворца</span>
+          <span>Галерея</span>
+          <span>Планы залов</span>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="container">
+      <section class="hero" aria-label="Концертная программа">
+        <div class="hero-stage">
+          <img
+            class="hero-image"
+            id="hero-image"
+            src="./assets/theater.png"
+            alt="Спектакль на сцене театра перед зрительным залом"
+            width="856"
+            height="497"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="hero-program" role="group" aria-label="Ближайшие мероприятия">
+          <a class="program-item" href="#opera">
+            <img src="./assets/opera-thumb.png" alt="" width="80" height="80" />
+            <span>Опера VS Оперетта</span>
+          </a>
+          <a class="program-item" href="#vivaldi">
+            <img src="./assets/hall.png" alt="" width="80" height="80" />
+            <span>Антонио Вивальди. Времена года</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="events-section" id="afisha" aria-labelledby="events-heading">
+        <div class="section-heading">
+          <h1 id="events-heading">Афиша</h1>
+          <a class="all-events" href="#afisha">
+            <img
+              class="asset-icon"
+              src="./assets/calendar-icon.png"
+              alt=""
+              width="40"
+              height="40"
+            /><span>Все мероприятия</span>
+          </a>
+        </div>
+
+        <div class="event-list">
+          <article class="event-card" id="vivaldi">
+            <div class="event-date">
+              <time datetime="2023-06-03"><span>3</span><span>июня</span></time>
+            </div>
+            <img
+              class="event-image"
+              src="./assets/vivaldi.png"
+              width="320"
+              height="240"
+              alt="Сцена и зрительный зал театра"
+              loading="eager"
+            />
+            <div class="event-description">
+              <h2>Антонио Вивальди. Времена года</h2>
+              <p>Посвящение Фрэнку Синатре.</p>
+              <ul class="event-meta">
+                <li>
+                  <img
+                    class="asset-icon"
+                    src="./assets/music-icon.png"
+                    alt=""
+                    width="32"
+                    height="32"
+                  />Джаз
+                </li>
+                <li>
+                  <img
+                    class="asset-icon"
+                    src="./assets/clock-icon.png"
+                    alt=""
+                    width="32"
+                    height="32"
+                  /><time datetime="19:00">19:00</time>
+                </li>
+                <li>
+                  <img
+                    class="asset-icon"
+                    src="./assets/person-icon.png"
+                    alt=""
+                    width="32"
+                    height="32"
+                  />6+
+                </li>
+              </ul>
+            </div>
+            <a class="button ticket-button" href="#contacts"> Заказать билет </a>
+          </article>
+          <article class="event-card" id="opera">
+            <div class="event-date">
+              <time datetime="2023-06-30"><span>30</span><span>июня</span></time>
+            </div>
+            <img
+              class="event-image"
+              src="./assets/opera.png"
+              width="320"
+              height="240"
+              alt="Артисты на сцене в декорациях оперетты"
+              loading="eager"
+            />
+            <div class="event-description">
+              <h2>Опера VS Оперетта</h2>
+              <p>Санкт-Петербургский камерный оркестр Olympic Orchestra</p>
+              <ul class="event-meta">
+                <li>
+                  <img
+                    class="asset-icon"
+                    src="./assets/music-icon.png"
+                    alt=""
+                    width="32"
+                    height="32"
+                  />Классика
+                </li>
+              </ul>
+            </div>
+            <a class="button ticket-button" href="#contacts"> Заказать билет </a>
+          </article>
+        </div>
+      </section>
+
+      <div class="news-calendar">
+        <section class="news-section" id="news" aria-labelledby="news-heading">
+          <h2 class="section-title" id="news-heading">Новости</h2>
+          <div class="news-list">
+            <article class="news-card">
+              <div class="news-link">
+                <img
+                  src="./assets/news-gallery.png"
+                  width="306"
+                  height="204"
+                  alt="Посетители в светлом выставочном пространстве"
+                  loading="eager"
+                />
+                <h3>Переносы / Отмена мероприятий</h3>
+              </div>
+              <p>
+                11.04.2023 г. в 19.00 час. — концерт «Опера vs. Оперетта» - ПЕРЕНОС на 05.06.2023 г.
+                в 19.00 час.
+              </p>
+            </article>
+            <article class="news-card">
+              <div class="news-link">
+                <img
+                  src="./assets/news-museum.png"
+                  width="306"
+                  height="204"
+                  alt="Экспозиция со скелетом динозавра в музейном зале"
+                  loading="eager"
+                />
+                <h3>Переносы / Отмена мероприятий</h3>
+              </div>
+              <p>
+                11.04.2023 г. в 19.00 час. — концерт «Опера vs. Оперетта» - ПЕРЕНОС на 05.06.2023 г.
+                в 19.00 час.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="excursion-card" id="excursions" aria-labelledby="excursion-heading">
+          <div class="excursion-cover">
+            <img
+              src="./assets/excursion.png"
+              alt="Картины в золотых рамах в историческом интерьере"
+              width="526"
+              height="300"
+              loading="eager"
+            />
+            <h2 id="excursion-heading">Обзорные экскурсии</h2>
+          </div>
+          <div class="calendar-body">
+            <div class="calendar-controls">
+              <h3 id="calendar-month">Июль</h3>
+              <div class="calendar-arrows">
+                <span class="square-button previous" aria-hidden="true">
+                  <img
+                    class="asset-icon"
+                    src="./assets/arrow-right.png"
+                    alt=""
+                    width="24"
+                    height="24"
+                  />
+                </span>
+                <span class="square-button" aria-hidden="true">
+                  <img
+                    class="asset-icon"
+                    src="./assets/arrow-right.png"
+                    alt=""
+                    width="24"
+                    height="24"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              class="calendar-days"
+              id="calendar-days"
+              role="group"
+              aria-label="Образец календаря экскурсий: июль"
+            >
+              <span class="calendar-day">1</span>
+              <span class="calendar-day is-available">2</span>
+              <span class="calendar-day">3</span>
+              <span class="calendar-day">4</span>
+              <span class="calendar-day is-available">5</span>
+              <span class="calendar-day">6</span>
+              <span class="calendar-day is-available">7</span>
+              <span class="calendar-day">1</span>
+              <span class="calendar-day is-available">2</span>
+              <span class="calendar-day">3</span>
+              <span class="calendar-day">4</span>
+              <span class="calendar-day is-available">5</span>
+              <span class="calendar-day">6</span>
+              <span class="calendar-day is-available">7</span>
+              <span class="calendar-day">1</span>
+              <span class="calendar-day is-available">2</span>
+              <span class="calendar-day">3</span>
+              <span class="calendar-day">4</span>
+              <span class="calendar-day is-available">5</span>
+              <span class="calendar-day">6</span>
+              <span class="calendar-day is-available">7</span>
+              <span class="calendar-day">1</span>
+              <span class="calendar-day is-available">2</span>
+              <span class="calendar-day">3</span>
+              <span class="calendar-day">4</span>
+              <span class="calendar-day is-available">5</span>
+              <span class="calendar-day">6</span>
+              <span class="calendar-day is-available">7</span>
+              <span class="calendar-day">1</span>
+              <span class="calendar-day is-available">2</span>
+              <span class="calendar-day">3</span>
+              <span class="calendar-day">4</span>
+              <span class="calendar-day is-available">5</span>
+              <span class="calendar-day">6</span>
+              <span class="calendar-day is-available">7</span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section
+        class="announcements-section"
+        id="announcements"
+        aria-labelledby="announcements-heading"
+      >
+        <div class="section-heading">
+          <h2 class="section-title" id="announcements-heading">Краткие анонсы</h2>
+          <a class="all-events" href="#afisha"
+            ><img
+              class="asset-icon"
+              src="./assets/calendar-icon.png"
+              alt=""
+              width="40"
+              height="40"
+            /><span>Все мероприятия</span></a
+          >
+        </div>
+        <div class="announcements-list">
+          <article class="announcement">
+            <time datetime="2023-06-03"><strong>3</strong><span>июня</span></time
+            ><span class="announcement-title">«ВЕК имени СИНАТРЫ»</span>
+          </article>
+          <article class="announcement">
+            <time datetime="2023-06-03"><strong>3</strong><span>июня</span></time
+            ><span class="announcement-title">«ВЕК имени СИНАТРЫ»</span>
+          </article>
+          <article class="announcement">
+            <time datetime="2023-06-03"><strong>3</strong><span>июня</span></time
+            ><span class="announcement-title">«ВЕК имени СИНАТРЫ»</span>
+          </article>
+          <article class="announcement">
+            <time datetime="2023-06-03"><strong>3</strong><span>июня</span></time
+            ><span class="announcement-title">«ВЕК имени СИНАТРЫ»</span>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contacts">
+      <div class="container">
+        <div class="footer-main">
+          <a class="brand footer-brand" href="#main">Сайт концертно - экскурсионных программ</a>
+          <div class="footer-events">
+            <h2>Мероприятия</h2>
+            <nav aria-label="Мероприятия">
+              <a href="#excursions">Экскурсии</a><a href="#afisha">Концерты</a
+              ><a href="#afisha">Афиша</a>
+            </nav>
+          </div>
+          <div class="footer-contacts">
+            <h2>Контакты</h2>
+            <address>
+              <p>г. Санкт-Петербург, Невский пр., д. 1</p>
+              <a href="mailto:text@mail.ru">text@mail.ru</a
+              ><a href="tel:+78121234567">(812)&nbsp;123&#8209;45&#8209;67</a>
+            </address>
+          </div>
+        </div>
+        <p class="footer-copyright">Сайт ко</p>
+      </div>
+    </footer>
+  </body>
+</html>

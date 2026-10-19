@@ -1,0 +1,16 @@
+/node_modules/
+/dist/
+/coverage/
+/.cache/
+
+/.idea/
+/pics/
+
+.env
+.env.*
+!.env.example
+
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini
