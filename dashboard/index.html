@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#eef2f0" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Конструктор дашборда</title>
+    <link rel="icon" href="./mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./js/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">К дашборду</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <div class="brand">
+          <img src="./mark.svg" alt="" width="36" height="36" />
+          <span>Доска</span>
+        </div>
+        <button type="button" id="theme" class="button button-quiet" aria-pressed="false">
+          <span id="theme-icon" class="icon-slot" aria-hidden="true"></span> Тёмная тема
+        </button>
+      </div>
+    </header>
+
+    <main id="main" class="shell" tabindex="-1">
+      <section class="workspace" aria-labelledby="widgets-title">
+        <div class="toolbar">
+          <h1 id="page-title">Мой дашборд</h1>
+          <div class="toolbar-actions">
+            <button type="button" id="reset" class="button button-quiet" disabled>
+              Сбросить дашборд
+            </button>
+            <button type="button" id="add" class="button button-primary">
+              <span class="plus" aria-hidden="true">+</span> Добавить виджет
+            </button>
+          </div>
+        </div>
+        <div class="board">
+          <div class="board-header">
+            <div class="toolbar-label">
+              <h2 id="widgets-title">Виджеты</h2>
+              <output id="widget-count" class="count" aria-label="Количество виджетов">0</output>
+            </div>
+            <p id="reorder-tip" class="board-tip" hidden>Перетаскивайте за ручку на карточке</p>
+          </div>
+          <div class="board-canvas">
+            <div id="empty" class="empty">
+              <div class="empty-intro">
+                <h3>Добавьте первый виджет</h3>
+                <p>Выберите, с чего начать. Позже виджеты можно переставить или удалить.</p>
+                <button type="button" id="add-first" class="button button-secondary">
+                  <span class="plus" aria-hidden="true">+</span> Выбрать виджет
+                </button>
+              </div>
+              <ul id="quick-start" class="quick-start"></ul>
+            </div>
+            <p id="reorder-help" class="sr-only">
+              Перетащите за ручку или откройте меню перемещения и выберите направление.
+            </p>
+            <div id="widgets" class="grid" hidden></div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <span class="storage-dot" aria-hidden="true"></span>
+        <span id="storage-status" role="status">Данные хранятся в этом браузере</span>
+      </footer>
+    </main>
+
+    <dialog id="modal" aria-labelledby="modal-title">
+      <div class="modal-inner">
+        <div class="modal-header">
+          <h2 id="modal-title">Настройки виджета</h2>
+          <button
+            type="button"
+            class="icon-button modal-close"
+            data-close
+            aria-label="Закрыть окно"
+          >
+            ×
+          </button>
+        </div>
+        <div id="modal-body"></div>
+      </div>
+    </dialog>
+    <div id="toast" class="toast" role="status" aria-atomic="true"></div>
+  </body>
+</html>
